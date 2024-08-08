@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock tracker</title>
+</head>
+<body>
+    <form action="stockreg" method="POST" >
+        {% csrf_token %}
+        <input type="text" class="inputs" placeholder="Your Stock symbol" name="symbol">
+        <input type="text" class="inputs" placeholder="Your Target Upper price" name="price">
+        <input type="text" class="inputs" placeholder="Your Target Lower price" name="price">
+        <button type="submit">Notify</button>
+    </form>
+</body>
+</html>
